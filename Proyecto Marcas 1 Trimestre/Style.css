@@ -60,7 +60,7 @@ nav {
 main {
     margin: 0;
     padding: 0;
-    background-color:#0e0e0e;
+    background-color:white;
     border-radius: 20px;
 }
 
@@ -70,37 +70,44 @@ header {
     padding: 10px;
 }
 
+#Título2 {
+  margin-top: 30px ;
+  margin-left: 30px;
+  font-family: 'Times New Roman', Times, serif;
 
 
+}
+
+.ContenedorInformacion {
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+.ContenedorInformacion p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  padding: 20px;
+}
+
+.ContenedorInformacion ul {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  margin-left: 40px;
+}
 
 
 /* Estilos para la sección principal */
+
 .seccion1 {
     display: flex;
     margin: 20px;
 }
 
-.seccion2 {
-    display: flex;
-    margin: 20px;
-}
-
-.seccion2 img {
+.seccion1 img {
   margin: 20px;
   border-radius: 20px;
-}
-
-/* Estilos para el menú lateral */
-aside {
-    background-color: var(--color-menu-lateral);
-    border-radius: 20px;
-    padding: 10px;
-    width: 250px;
-    margin-right: 20px;
-}
-
-aside ul {
-    list-style-type: none;
 }
 
 /* Estilos para el footer */
@@ -108,7 +115,7 @@ footer {
  background-color:black;
  color: white;
  padding: 10px;
- text-align: center;
+ text-align: justify;
  clear: both;
 }
 
@@ -122,7 +129,7 @@ footer {
   
 }
 
-/*Estilos del menú y submenú*/
+/*Estilos del menú*/
 nav ul {
     list-style-type: none; /*para que no se muestren los puntos de la lista*/
     margin: 0;
@@ -140,31 +147,5 @@ nav ul {
     color: #fff;
   }
   
-  nav ul li ul {
-    display: none;  /*ocultar submenú*/
-    position: absolute; /*para que el submenú no se desplace*/
-    background-color: var(--color-submenu);
-    border: 1px solid #333;
-  }
-  
-  nav ul li:hover > ul {
-    display: inherit; /*mostrar submenú*/
-  }
-  
-  nav ul li ul li {
-    width: 200px;
-    float: none;
-    display: list-item; /*para que los elementos del submenú se muestren en forma de lista*/
-    position: relative; /*para que el submenú no se desplace*/
-  }
-  
-  nav ul li ul li a {
-    padding: 8px 16px;
-    color: #000;
-  }
-  
-  nav ul li ul li a:hover {
-    background-color: #f1f1f1;
-  }
   
 
