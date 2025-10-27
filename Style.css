@@ -1,0 +1,158 @@
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* MENÚ */
+header {
+  background: black;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 160px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: gold;
+}
+
+/* PORTADA */
+.portada {
+  position: relative;
+  height: 400px;
+}
+
+.imagen-portada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+
+.logo-portada {
+  position: absolute;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* SECCIÓN INFORMACIÓN */
+.seccion-info {
+  padding: 40px;
+  margin: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-color: rgb(31, 31, 31);
+  border-radius: 50px;
+}
+
+.seccion-info ul {
+  margin: 15px 0;
+  text-align: left;
+  display: inline-block;
+}
+
+h1 {
+  color:darkgoldenrod;
+}
+
+/* IMÁGENES DE INSTRUMENTOS */
+.instrumentos {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+}
+
+.instrumentos img:hover {
+  transform: scale(1.15); /* Se agranda un 15% */
+  cursor: pointer; /* Opcional: cambia el cursor */
+}
+
+.imagenGuitarra {
+  width: 250px;
+  height: 500px; 
+}
+
+.imagenBajo {
+  width: 200px;
+  height: 550px;
+}
+
+.imagenPedal {
+  width: 350px;
+  height: 350px; 
+}
+
+.imagenGuitarra :hover {
+  transform: scale(1.5);
+}
+
+.imagenBajo :hover {
+  transform: scale(1.5);
+}
+
+.imagenPedal :hover {
+  transform: scale(1.5);
+}
+
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.logo-footer {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE - MÓVIL */
+@media (max-width: 768px) {
+  .portada {
+    height: 260px;
+  }
+  .logo-portada {
+    width: 250px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
